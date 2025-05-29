@@ -1,0 +1,31 @@
+{
+  "name": "appointments-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroVRibeiro/appointments-serverless.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PedroVRibeiro/appointments-serverless/issues"
+  },
+  "homepage": "https://github.com/PedroVRibeiro/appointments-serverless#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.149",
+    "@types/node": "^22.15.24",
+    "serverless": "^4.15.1",
+    "serverless-offline": "^14.4.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7"
+  }
+}
