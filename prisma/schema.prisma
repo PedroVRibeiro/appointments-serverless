@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Doctor {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  specialty String
+  schedule  Schedule[]
+}
+
+type Schedule {
+  date String
+  patient String
+}

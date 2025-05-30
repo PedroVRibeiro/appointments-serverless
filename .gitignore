@@ -5,3 +5,5 @@ node_modules/
 build/
 temp/
 dist/
+/src/generated/prisma
+.env

@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PedroVRibeiro/appointments-serverless.git"
@@ -23,9 +26,13 @@
     "@types/node": "^22.15.24",
     "serverless": "^4.15.1",
     "serverless-offline": "^14.4.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "aws-lambda": "^1.0.7"
+    "@prisma/client": "^6.8.2",
+    "aws-lambda": "^1.0.7",
+    "dotenv": "^16.5.0",
+    "prisma": "^6.8.2"
   }
 }
