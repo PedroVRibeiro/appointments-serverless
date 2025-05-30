@@ -1,0 +1,17 @@
+services:
+  mongo:
+    build:
+      context: .
+      args:
+        MONGO_VERSION: 6
+    environment:
+      MONGO_REPLICA_PORT: 27017
+      MONGO_REPLICA_HOST: host.docker.internal
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
